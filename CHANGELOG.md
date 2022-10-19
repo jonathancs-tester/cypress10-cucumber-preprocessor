@@ -1,5 +1,5 @@
 # Changelog
-Starting with version 1.6.0 all the changes will be documented [here](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor/releases) 
+Starting with version 1.6.0 all the changes will be documented [here](https://github.com/jonathancs-tester/cypress10-cucumber-preprocessor/releases) 
 
 ## [1.6.0] - 2018-10-23
 ### Added
@@ -98,7 +98,7 @@ Support for datatables and docstrings ( #7 Thanks @fcurella !)
 
 Allow custom dir config ( #5 Thanks @dvelasquez !)
 
-Tests and CircleCI integration! (@lgandecki)
+Tests and CircleCI e2e! (@lgandecki)
 
 Changelog!
 

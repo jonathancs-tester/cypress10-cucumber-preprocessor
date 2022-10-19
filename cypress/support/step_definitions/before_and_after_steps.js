@@ -5,7 +5,7 @@ const {
   After,
   Given,
   Then,
-} = require("cypress-cucumber-preprocessor/steps");
+} = require("cypress10-cucumber-preprocessor/steps");
 
 let beforeCounter = 0;
 let beforeWithTagCounter = 0;

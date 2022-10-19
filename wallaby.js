@@ -8,7 +8,7 @@ module.exports = function (wallaby) {
       './lib/*.snap',
       {pattern: '.eslintrc', load: false},
       './cypress/support/step_definitions/*.js',
-      './cypress/integration/*.feature',
+      './cypress/e2e/*.feature',
     ],
 
     tests: [

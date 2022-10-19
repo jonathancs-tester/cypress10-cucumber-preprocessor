@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { Then, When } from "cypress-cucumber-preprocessor/steps";
+import { Then, When } from "cypress10-cucumber-preprocessor/steps";
 
 When("I run one successful step", () => {
   expect(true).to.equal(true);

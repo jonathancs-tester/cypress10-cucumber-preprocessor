@@ -31,9 +31,9 @@ if (!envGlob) {
     // maybe we can set this path in the plugin conf (package.json : "cypressConf": "test/cypress.config.js")
     // eslint-disable-next-line import/no-unresolved,global-require
     const cypressConf = require("../../cypress.config.js");
-    const integrationFolder =
-      cypressConf && cypressConf.integrationFolder
-        ? cypressConf.integrationFolder.replace(/\/$/, "")
+    const e2eFolder =
+      cypressConf && cypressConf.e2eFolder
+        ? cypressConf.e2eFolder.replace(/\/$/, "")
         : "cypress/e2e";
 
     if (cypressConf && cypressConf.ignoreTestFiles) {
@@ -44,11 +44,11 @@ if (!envGlob) {
       let testFiles = !Array.isArray(cypressConf.testFiles)
         ? cypressConf.testFiles.split(",")
         : cypressConf.testFiles;
-      testFiles = testFiles.map((pattern) => `${integrationFolder}/${pattern}`);
+      testFiles = testFiles.map((pattern) => `${e2eFolder}/${pattern}`);
       specGlob =
         testFiles.length > 1 ? `{${testFiles.join(",")}}` : testFiles[0];
     } else {
-      specGlob = `${integrationFolder}/**/*.feature`;
+      specGlob = `${e2eFolder}/**/*.feature`;
     }
     console.log("Using cypress.config.js configuration:");
     console.log("Spec files: ", specGlob);

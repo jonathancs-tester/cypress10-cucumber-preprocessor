@@ -10,7 +10,7 @@ const {
 
 // eslint-disable-next-line no-console
 console.warn(
-  "DEPRECATION WARNING! Please change your imports from cypress-cucumber-preprocessor/resolveStepDefinition to cypress-cucumber-preprocessor/steps"
+  "DEPRECATION WARNING! Please change your imports from cypress10-cucumber-preprocessor/resolveStepDefinition to cypress10-cucumber-preprocessor/steps"
 );
 
 module.exports = {

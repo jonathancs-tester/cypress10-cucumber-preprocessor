@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-const { Given, When, Then } = require("cypress-cucumber-preprocessor/steps");
+const { Given, When, Then } = require("cypress10-cucumber-preprocessor/steps");
 
 // you can have external state, and also require things!
 let sum = 0;
